@@ -1,0 +1,32 @@
+api_version = "2026-01"
+
+[[extensions]]
+type = "ui_extension"
+name = "Factory54 Info"
+handle = "factory54-info"
+uid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+
+[[extensions.targeting]]
+target = "purchase.checkout.block.render"
+module = "./src/Checkout.tsx"
+
+[extensions.capabilities]
+api_access = false
+network_access = false
+
+[extensions.settings]
+[[extensions.settings.fields]]
+key = "banner_tone"
+type = "single_line_text_field"
+name = "Block type"
+description = "Choose the banner style for this block."
+
+[[extensions.settings.fields.validations]]
+name = "choices"
+value = '["info", "warning", "success", "critical", "auto"]'
+
+[[extensions.settings.fields]]
+key = "banner_message"
+type = "multi_line_text_field"
+name = "Message"
+description = "Message text shown to logged-in customers."

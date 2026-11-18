@@ -1,0 +1,21 @@
+{
+  "name": "checkout-factory54-info",
+  "private": true,
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "deploy": "shopify app deploy",
+    "generate": "shopify app generate"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.19 <22 || >=22.12"
+  },
+  "workspaces": [
+    "extensions/*"
+  ],
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ]
+}

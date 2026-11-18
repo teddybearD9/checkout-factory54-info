@@ -1,0 +1,18 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "YOUR_CLIENT_ID"
+name = "checkout-factory54-info"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2026-01"
+
+[access_scopes]
+scopes = ""
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
